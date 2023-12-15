@@ -13,8 +13,8 @@ from sklearn.svm import SVC
 df = pd.read_csv('./datasets/iris.csv')
 df.info()
 # Create Observation set and Class set
-x = df.drop(columns=['Id', 'Species']).to_numpy()
-y = df['Species'].to_numpy()
+x = df.drop(columns=['Id', 'Species'])
+y = df['Species']
 
 # Normalization and LabelEncoding
 encoder = LabelEncoder()
