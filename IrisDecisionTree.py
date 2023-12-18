@@ -12,6 +12,7 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 # Reading and Splitting the dataset
 df = pd.read_csv('./datasets/iris.csv')
+df.info()
 x = df.values[:, 1:5]
 y = df.values[:, 5]
 
